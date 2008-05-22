@@ -6,10 +6,13 @@
 
 package Devel::Autoflush;
 use strict;
-use warnings;
 
 our $VERSION = '0.01';
 $VERSION = eval $VERSION; # convert '1.23_45' to 1.2345
+
+my $old = select STDOUT; $|++;
+select STDERR; $|++;
+select $old;
 
 1;
 
@@ -31,7 +34,7 @@ This documentation describes version %%VERSION%%.
 
 = SYNOPSIS
 
- perl -d:Autoflush Makefile.PL
+ perl -MDevel::Autoflush Makefile.PL
 
 = DESCRIPTION
 
@@ -53,11 +56,11 @@ silently appear to hang while waiting for input.  This might happen with 'tee':
 
 Use Devel::Autoflush to work around this:
 
-  $ perl -d:Autoflush guess.pl | tee capture.out
+  $ perl -MDevel::Autoflush guess.pl | tee capture.out
 
 Or set it in {PERL5OPT}:
 
-  $ export PERL5OPT=-d:Autoflush
+  $ export PERL5OPT=-MDevel::Autoflush
   $ perl guess.pl | tee capture.out
 
 = BUGS

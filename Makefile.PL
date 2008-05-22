@@ -6,7 +6,7 @@ WriteMakefile
           'NAME' => 'Devel::Autoflush',
           'VERSION_FROM' => 'lib/Devel/Autoflush.pm',
           'PREREQ_PM' => {
-                           'Module::Build' => '0.2808',
+                           'IO::CaptureOutput' => '1.08',
                            'Test::More' => '0.62'
                          },
           'INSTALLDIRS' => 'site',

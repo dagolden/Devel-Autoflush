@@ -8,7 +8,6 @@ use strict;
 use warnings;
 
 use Test::More;
-use Test::Exception;
 
 plan tests => 1;
 

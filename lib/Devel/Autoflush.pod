@@ -12,7 +12,7 @@ This documentation describes version 0.01.
 
 =head1 SYNOPSIS
 
-  perl -d:Autoflush Makefile.PL
+  perl -MDevel::Autoflush Makefile.PL
 
 =head1 DESCRIPTION
 
@@ -34,11 +34,11 @@ silently appear to hang while waiting for input.  This might happen with 'tee':
 
 Use Devel::Autoflush to work around this:
 
-   $ perl -d:Autoflush guess.pl | tee capture.out
+   $ perl -MDevel::Autoflush guess.pl | tee capture.out
 
 Or set it in C<<< PERL5OPT >>>:
 
-   $ export PERL5OPT=-d:Autoflush
+   $ export PERL5OPT=-MDevel::Autoflush
    $ perl guess.pl | tee capture.out
 
 =head1 BUGS

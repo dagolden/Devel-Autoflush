@@ -13,11 +13,8 @@ $class->new(
       perl      => 5.004,
     },
     build_requires  => {
-      'Module::Build' => 0.2808,
+      'IO::CaptureOutput' => 1.08,
       'Test::More' => 0.62,
-    },
-    configure_requires => {
-      'Module::Build' => 0.2808,
     },
     meta_add            => { 
         no_index => { 
@@ -25,3 +22,4 @@ $class->new(
         } 
     },
 )->create_build_script;
+

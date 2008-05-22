@@ -5,7 +5,7 @@ VERSION
     This documentation describes version 0.01.
 
 SYNOPSIS
-      perl -d:Autoflush Makefile.PL
+      perl -MDevel::Autoflush Makefile.PL
 
 DESCRIPTION
     This module is a hack to set autoflush for STDOUT and STDERR from the
@@ -28,11 +28,11 @@ DESCRIPTION
 
     Use Devel::Autoflush to work around this:
 
-       $ perl -d:Autoflush guess.pl | tee capture.out
+       $ perl -MDevel::Autoflush guess.pl | tee capture.out
 
     Or set it in "PERL5OPT":
 
-       $ export PERL5OPT=-d:Autoflush
+       $ export PERL5OPT=-MDevel::Autoflush
        $ perl guess.pl | tee capture.out
 
 BUGS

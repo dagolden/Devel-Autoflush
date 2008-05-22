@@ -7,12 +7,10 @@ abstract: Set autoflush from the command line
 license: apache
 resources:
   license: http://apache.org/licenses/LICENSE-2.0
-configure_requires:
-  Module::Build: 0.2808
 requires:
   perl: 5.004
 build_requires:
-  Module::Build: 0.2808
+  IO::CaptureOutput: 1.08
   Test::More: 0.62
 provides:
   Devel::Autoflush:
