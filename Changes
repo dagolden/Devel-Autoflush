@@ -1,10 +1,10 @@
 # Copyright (c) 2008 by David Golden. All rights reserved.
-# Licensed under terms of Perl itself (the "License").
+# Licensed under Apache License, Version 2.0 (the "License").
 # You may not use this file except in compliance with the License.
 # A copy of the License was distributed with this file or you may obtain a 
-# copy of the License from http://dev.perl.org/licenses/
+# copy of the License from http://www.apache.org/licenses/LICENSE-2.0
 
 Revision history for Devel-Autoflush
 
-0.01 Wed May 21 22:48:39 2008
-    - original skeleton created with Module::Boilerplate
+0.01 Wed May 21 23:27:32 EDT 2008
+    - Initial release
