@@ -6,5 +6,8 @@
 
 Revision history for Devel-Autoflush
 
+0.02 Fri May 23 20:41:34 EDT 2008
+    - Remove 'our' keyword for backwards compatibility
+
 0.01 Wed May 21 23:27:32 EDT 2008
     - Initial release

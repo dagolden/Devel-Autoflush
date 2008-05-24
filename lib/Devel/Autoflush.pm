@@ -8,7 +8,7 @@ package Devel::Autoflush;
 use strict;
 
 use vars qw/$VERSION/;
-$VERSION = '0.01';
+$VERSION = '0.02';
 $VERSION = eval $VERSION; # convert '1.23_45' to 1.2345
 
 my $old = select STDOUT; $|++;
