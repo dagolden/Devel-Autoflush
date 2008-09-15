@@ -6,6 +6,9 @@
 
 Revision history for Devel-Autoflush
 
+0.03 Mon Sep 15 17:24:41 EDT 2008
+    - No longer loads any modules (e.g. vars, strict) for minimal side effects
+
 0.02 Fri May 23 20:41:34 EDT 2008
     - Remove 'our' keyword for backwards compatibility
 

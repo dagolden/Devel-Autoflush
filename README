@@ -2,7 +2,7 @@ NAME
     Devel::Autoflush - Set autoflush from the command line
 
 VERSION
-    This documentation describes version 0.02.
+    This documentation describes version 0.03.
 
 SYNOPSIS
       perl -MDevel::Autoflush Makefile.PL

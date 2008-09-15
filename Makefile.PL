@@ -3,14 +3,14 @@ require 5.004;
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
+          'PL_FILES' => {},
+          'INSTALLDIRS' => 'site',
           'NAME' => 'Devel::Autoflush',
+          'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/Devel/Autoflush.pm',
           'PREREQ_PM' => {
-                           'IO::CaptureOutput' => '1.08',
-                           'Test::More' => '0.62'
-                         },
-          'INSTALLDIRS' => 'site',
-          'EXE_FILES' => [],
-          'PL_FILES' => {}
+                           'Test::More' => '0.62',
+                           'IO::CaptureOutput' => '1.08'
+                         }
         )
 ;
