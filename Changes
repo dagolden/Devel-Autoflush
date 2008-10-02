@@ -6,6 +6,10 @@
 
 Revision history for Devel-Autoflush
 
+0.04 Wed Oct  1 23:06:51 EDT 2008
+    - Bug fix: no longer uses string eval to set $VERSION (broke testing of
+      overload::eval
+
 0.03 Mon Sep 15 17:24:41 EDT 2008
     - No longer loads any modules (e.g. vars, strict) for minimal side effects
 

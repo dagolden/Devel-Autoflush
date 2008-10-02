@@ -7,9 +7,6 @@
 package Devel::Autoflush;
 $Devel::Autoflush::VERSION = '0.04';
 
-# convert '1.23_45' to 1.2345
-$Devel::Autoflush::VERSION = eval $Devel::Autoflush::VERSION; 
-
 my $old = select STDOUT; $|++;
 select STDERR; $|++;
 select $old;
