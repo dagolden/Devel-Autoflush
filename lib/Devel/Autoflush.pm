@@ -7,7 +7,7 @@
 package Devel::Autoflush;
 $Devel::Autoflush::VERSION = '0.05';
 
-my $kwalitee_nocritic = << END;
+my $kwalitee_nocritic = << 'END';
 # can't use strict as older stricts load Carp and we can't allow side effects
 use strict;  
 END
