@@ -1,12 +1,12 @@
 ---
 name: Devel-Autoflush
-version: 0.04
+version: 0.05
 author:
   - 'David A. Golden <dagolden@cpan.org>'
 abstract: Set autoflush from the command line
 license: apache
 resources:
-  license: http://apache.org/licenses/LICENSE-2.0
+  license: http://www.apache.org/licenses/LICENSE-2.0.txt
 requires:
   perl: 5.004
 build_requires:
@@ -15,8 +15,8 @@ build_requires:
 provides:
   Devel::Autoflush:
     file: lib/Devel/Autoflush.pm
-    version: 0.04
-generated_by: Module::Build version 0.3
+    version: 0.05
+generated_by: Module::Build version 0.3103
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2

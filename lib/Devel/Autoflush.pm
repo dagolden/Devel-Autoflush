@@ -1,11 +1,16 @@
-# Copyright (c) 2008 by David Golden. All rights reserved.
+# Copyright (c) 2008-2009 by David Golden. All rights reserved.
 # Licensed under Apache License, Version 2.0 (the "License").
 # You may not use this file except in compliance with the License.
 # A copy of the License was distributed with this file or you may obtain a 
 # copy of the License from http://www.apache.org/licenses/LICENSE-2.0
 
 package Devel::Autoflush;
-$Devel::Autoflush::VERSION = '0.04';
+$Devel::Autoflush::VERSION = '0.05';
+
+my $kwalitee_nocritic = << END;
+# can't use strict as older stricts load Carp and we can't allow side effects
+use strict;  
+END
 
 my $old = select STDOUT; $|++;
 select STDERR; $|++;
@@ -80,7 +85,7 @@ David A. Golden (DAGOLDEN)
 
 = COPYRIGHT AND LICENSE
 
-Copyright (c) 2008 by David A. Golden
+Copyright (c) 2008-2009 by David A. Golden
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

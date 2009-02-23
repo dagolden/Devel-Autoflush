@@ -14,6 +14,7 @@ t/00-load.t
 t/autoflush.t
 Todo
 xt/critic.t
+xt/kwalitee.t
 xt/perlcriticrc
 xt/pod-coverage.t
 xt/pod-format.t

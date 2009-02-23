@@ -8,7 +8,7 @@ Devel::Autoflush - Set autoflush from the command line
 
 =head1 VERSION
 
-This documentation describes version 0.04.
+This documentation describes version 0.05.
 
 =head1 SYNOPSIS
 
@@ -67,7 +67,7 @@ David A. Golden (DAGOLDEN)
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2008 by David A. Golden
+Copyright (c) 2008-2009 by David A. Golden
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
