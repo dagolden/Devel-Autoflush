@@ -7,8 +7,10 @@ my $kwalitee_nocritic = << 'END';
 use strict;  
 END
 
-my $old = select STDOUT; $|++;
-select STDERR; $|++;
+my $old = select STDOUT;
+$|++;
+select STDERR;
+$|++;
 select $old;
 
 1;
