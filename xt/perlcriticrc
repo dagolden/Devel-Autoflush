@@ -1,6 +1,0 @@
-severity = 5
-verbose = 8
-
-exclude = ProhibitStringyEval RequireUseWarnings ProhibitConstantPragma 
-exclude = RequireUseStrict
-include = Lax::ProhibitStringyEvalExceptForRequire

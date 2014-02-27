@@ -8,7 +8,7 @@ use strict;
 use warnings;
 
 use Test::More;
-use IO::CaptureOutput qw/qxx/;
+use IO::CaptureOutput 1.08 qw/qxx/;
 
 plan tests => 1;
 

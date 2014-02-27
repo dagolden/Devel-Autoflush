@@ -1,6 +1,2 @@
-Build
-_build/*
-blib/*
-*.bak
-Makefile
-Debian_CPANTS.txt
+/Devel-Autoflush*
+/.build
