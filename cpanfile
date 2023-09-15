@@ -1,9 +1,9 @@
 requires "perl" => "5.006";
 
 on 'test' => sub {
+  requires "Capture::Tiny" => "0";
   requires "ExtUtils::MakeMaker" => "0";
   requires "File::Spec::Functions" => "0";
-  requires "IO::CaptureOutput" => "1.08";
   requires "List::Util" => "0";
   requires "Test::More" => "0";
   requires "strict" => "0";

@@ -8,13 +8,16 @@ use strict;
 use warnings;
 
 use Test::More;
-use IO::CaptureOutput 1.08 qw/qxx/;
+use Capture::Tiny 'capture';
 
 plan tests => 1;
 
 $ENV{PERL5OPT} = '-MDevel::Autoflush';
 
-my ( $stdout, $stderr ) = qxx( $^X, '-we', 'print $| ? 1 : 0,  "\n"' );
+my ( $stdout, $stderr ) = capture {
+    system( $^X, '-we', 'print $| ? 1 : 0,  "\n"' );
+};
+
 chomp($stdout);
 is( $stdout, 1, "autoflush was set" ) or diag "STDERR: $stderr";
 
